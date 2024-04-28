@@ -106,7 +106,7 @@ public class SellerDaoJDBC implements SellerDao {
 			Map<Integer, Department> map = new HashMap<>();
 
 			while (rs.next()) {
-
+//				Tries to get the department from the map, if exist it assign it to the department otherwise remain as null.
 				Department dep = map.get(rs.getInt("DepartmentId"));
 
 				if (dep == null) {
